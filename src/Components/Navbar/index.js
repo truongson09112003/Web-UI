@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import styles from "./Navbar.module.scss";
 
@@ -13,9 +14,15 @@ function Navbar() {
       <div className={cx("v-right")}>
         <div className={cx("v-right-list")}>
           <ul className={cx("v-list")}>
-            <li className={cx("v-list-item")}>Trang Chủ</li>
-            <li className={cx("v-list-item")}>Dịch Vụ</li>
-            <li className={cx("v-list-item")}>Kinh nghiệm</li>
+            <Link to="/">
+              <li className={cx("v-list-item")}>Trang Chủ</li>
+            </Link>
+            <Link to="services">
+              <li className={cx("v-list-item")}>Dịch Vụ</li>
+            </Link>
+            <Link to="experience">
+              <li className={cx("v-list-item")}>Trải nghiệm</li>
+            </Link>
             <li className={cx("v-list-item")}>Đầu Tư</li>
             <li className={cx("v-list-item")}>Chứng Thực</li>
           </ul>

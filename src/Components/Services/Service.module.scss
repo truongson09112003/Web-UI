@@ -1,0 +1,90 @@
+.wrapper {
+  padding: 0 55px;
+  display: flex;
+  height: 70vh;
+  margin-top: 44px;
+  margin-bottom: 240px;
+  position: relative;
+  padding: 0.5rem 3.5rem;
+}
+
+.v-awesome {
+  display: flex;
+  flex-direction: column;
+}
+
+.v-span-1 {
+  color: var(--orange);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.v-span-2 {
+  color: var(--black);
+  font-size: 35px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.v-button {
+  width: 160px;
+  height: 40px;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.v-span-3 {
+  line-height: 26px;
+}
+
+.v-p-dow {
+  margin: -2px 0;
+}
+
+.v-right {
+  position: relative;
+}
+
+.v-t-h-t {
+  position: absolute;
+  left: 296px;
+}
+
+.v-t-h-t-1 {
+  position: absolute;
+  top: 220px;
+  left: -75px;
+}
+
+.v-t-h-t-2 {
+  position: absolute;
+  top: 348px;
+  left: 268px;
+}
+
+.blur {
+  background: #eed0ff;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(72px);
+  z-index: -9;
+  top: 38%;
+  left: 56%;
+}
+
+.v-blur {
+  left: 100px;
+  top: 400px;
+}
+
+.v-ft {
+  position: absolute;
+  bottom: -230px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}

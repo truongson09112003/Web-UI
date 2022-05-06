@@ -1,7 +1,9 @@
 .Wrapper {
   display: flex;
-  height: 606px;
+  height: 610px;
   margin-top: 96px;
+  position: relative;
+  padding: 0.5rem 3.5rem;
 }
 
 .v-left {
@@ -123,4 +125,13 @@
   z-index: -9;
   top: 18%;
   left: 56%;
+}
+
+.v-ft {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  padding-bottom: 6px;
 }

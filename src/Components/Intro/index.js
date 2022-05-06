@@ -43,7 +43,11 @@ const Intro = () => {
             <img src={Instagram} alt="Có lỗi xảy ra" className={cx("v-img")} />
           </a>
         </div>
+        <span>Bạn Muốn Sử Dụng Dịch Vụ Hãy Chọn Vào Dịch Vụ ❤️</span>
       </div>
+      <span className={cx("brand", "v-ft")}>
+        © 2015 - Bản Quyền Thuộc Về Nguyễn Trường Sơn
+      </span>
       <div className={cx("v-right")}>
         <img
           src={Vector1}
