@@ -1,0 +1,35 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8 %);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  background-color: #f5f5f5;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+}

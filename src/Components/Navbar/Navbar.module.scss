@@ -1,0 +1,51 @@
+.v-wrapper {
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.v-left {
+  flex: 0.8;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.v-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.v-toggle {
+}
+
+.v-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.v-right-list {
+  flex: 10;
+}
+
+.v-list {
+  display: flex;
+  gap: 32px;
+  margin-right: 64px;
+  list-style: none;
+}
+
+.v-list-item {
+  font-size: 16px;
+  &:hover {
+    cursor: pointer;
+    color: var(--orange);
+  }
+}
+
+.v-button {
+  flex: 2;
+}
