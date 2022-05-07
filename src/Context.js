@@ -3,7 +3,7 @@ import { createContext, useReducer } from "react";
 export const themContext = createContext();
 
 const initThem = {
-  darkMode: false,
+  darkMode: true,
 };
 
 const Reducer = (state, action) => {

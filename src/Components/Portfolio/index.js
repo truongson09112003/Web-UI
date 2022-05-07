@@ -31,7 +31,7 @@ function Portfolio() {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     responsive: [
       {
