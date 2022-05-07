@@ -15,6 +15,8 @@ function Work() {
 
   const darkMode = Theme.state.darkMode;
 
+  document.title = "Học Tập Và Làm Việc Cùng Với CV Shopp...";
+
   return (
     <div className={cx("wrapper")}>
       <div className={cx("v-awesome")}>

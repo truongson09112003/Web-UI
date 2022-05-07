@@ -23,6 +23,8 @@ function Portfolio() {
 
   const darkMode = Theme.state.darkMode;
 
+  document.title = "Một Số Công Việc Liên Quan Với CV Shopp...";
+
   const settings = {
     dots: true,
     infinite: true,

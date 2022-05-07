@@ -11,6 +11,8 @@ import { themContext } from "../../Context";
 const cx = classNames.bind(styles);
 
 function Service() {
+  document.title = "Dịch Vụ CV Shopp...";
+
   const Theme = useContext(themContext);
 
   const darkMode = Theme.state.darkMode;

@@ -8,6 +8,8 @@ import { themContext } from "../../Context";
 const cx = className.bind(styles);
 
 function Contact() {
+  document.title = "Liên Hệ Với Tôi";
+
   const Theme = useContext(themContext);
 
   const darkMode = Theme.state.darkMode;

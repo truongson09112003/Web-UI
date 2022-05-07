@@ -11,6 +11,8 @@ function Video() {
   const Theme = useContext(themContext);
   const darkMode = Theme.state.darkMode;
 
+  document.title = "Trải Nghiệm Cùng Với CV Shopp...";
+
   return (
     <div className={cx("wrapper")}>
       <video autoPlay playsInline loop className={cx("video")}>

@@ -15,6 +15,8 @@ import LoadingDiv from "../LoadingDiv";
 const cx = classNames.bind(styles);
 
 const Intro = () => {
+  document.title = "Chào Mừng Bạn Đến Với CV Shop...";
+
   return (
     <div className={cx("Wrapper")}>
       <div className={cx("v-left")}>
