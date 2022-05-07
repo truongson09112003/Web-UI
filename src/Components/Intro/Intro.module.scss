@@ -75,6 +75,14 @@
 .v-loading-div {
   top: -4%;
   left: 62%;
+  transform: translateX(100%);
+  animation: Fadeout linear 0.4s forwards;
+}
+
+@keyframes Fadeout {
+  to {
+    transform: translateX(0);
+  }
 }
 
 .div-pos {
@@ -108,11 +116,23 @@
   left: -19%;
   border-radius: 50%;
   padding: 0;
+  transform: translateX(-70px);
+  width: 150px;
+  animation: Fadein1 linear 0.4s forwards;
+}
+
+@keyframes Fadein1 {
+  to {
+    transform: scale(0.6);
+    transform: translateX(0px);
+  }
 }
 
 .div-item-1 {
   top: 366px;
   left: 0;
+  transform: translateX(-40px);
+  animation: Fadein1 linear 0.4s forwards;
 }
 
 .v-blur {
@@ -134,4 +154,32 @@
   transform: translateX(-50%);
   font-size: 12px;
   padding-bottom: 6px;
+}
+
+@media (max-width: 740px) {
+  .Wrapper {
+    flex-direction: column;
+    height: 155vh;
+    margin-top: 22px;
+  }
+  .v-right {
+    margin-top: 83px;
+    width: 100%;
+    left: 8px;
+  }
+  .v-img-right-4 {
+    left: -5%;
+  }
+  .v-ft {
+    font-size: 8px;
+  }
+  .div-item-1 {
+    left: -38px;
+  }
+  .v-loading-div {
+    left: -33%;
+  }
+  .v-img-right-4 {
+    left: 70%;
+  }
 }

@@ -30,3 +30,65 @@ a {
   top: 18%;
   left: 56%;
 }
+
+.slick-slider.slick-initialized {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.slick-arrow {
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.slick-arrow.slick-prev {
+  position: absolute;
+  z-index: 10;
+}
+
+.slick-arrow.slick-next {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  display: none;
+}
+
+.slick-dots li {
+  display: none;
+}
+
+.slick-list {
+  margin-left: 172px;
+  overflow: hidden;
+}
+
+.toggle > * {
+  width: 18px;
+  height: 18px;
+  color: var(--orange);
+}
+
+.ms-d-fe {
+  margin-left: 8px;
+}
+
+.btn-primary-fdfd {
+  padding: 10px 0;
+  display: block;
+}
+.s-f-f-g-df > * {
+  display: block;
+}
+
+@media (max-width: 740px) {
+  .slick-list {
+    margin-left: 0;
+  }
+}

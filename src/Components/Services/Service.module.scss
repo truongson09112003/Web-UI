@@ -88,3 +88,30 @@
   transform: translateX(-50%);
   font-size: 12px;
 }
+
+@media (max-width: 740px) {
+  .wrapper {
+    flex-direction: column;
+    height: 145vh;
+  }
+  .v-t-h-t {
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
+
+  .v-t-h-t-1 {
+    position: absolute;
+    top: 370px;
+    left: 0;
+  }
+
+  .v-t-h-t-2 {
+    position: absolute;
+    top: 715px;
+    left: 0;
+  }
+  .v-ft {
+    font-size: 8px;
+  }
+}

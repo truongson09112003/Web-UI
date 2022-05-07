@@ -72,3 +72,25 @@
     transform: translateX(0);
   }
 }
+
+.video-px-y-mobile {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .v-ft {
+    font-size: 8px;
+  }
+  .wrapper {
+    height: 90vh;
+  }
+  .video-px-y {
+    top: 123px;
+  }
+
+  .video-px-y-mobile {
+    display: block;
+    position: absolute;
+    bottom: 70px;
+  }
+}

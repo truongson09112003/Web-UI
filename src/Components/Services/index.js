@@ -5,15 +5,26 @@ import Heartemoji from "../../img/heartemoji.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card";
 import CV from "./CV/CV của bạn cám ơn đã sử dụng.pdf";
+import { useContext } from "react";
+import { themContext } from "../../Context";
 
 const cx = classNames.bind(styles);
 
 function Service() {
+  const Theme = useContext(themContext);
+
+  const darkMode = Theme.state.darkMode;
+
   return (
     <div className={cx("wrapper")}>
       <div className={cx("v-awesome")}>
         <span className={cx("v-span-1")}>Dịch Vụ</span>
-        <span className={cx("v-span-2")}>Tuyệt Vời Của Chúng Tôi</span>
+        <span
+          className={cx("v-span-2")}
+          style={darkMode ? { color: "#fff" } : { justifyContent: "center" }}
+        >
+          Tuyệt Vời Của Chúng Tôi
+        </span>
         <span className={cx("v-span-3")}>
           Một Dịch Vụ Nâng Cao Trải Nghiệm Người Dùng Thật Tuyệt Vời Khi Sử Dụng
           <br />
