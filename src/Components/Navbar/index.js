@@ -37,9 +37,7 @@ function Navbar() {
                   color: darkMode ? "#fff" : "",
                 }}
               >
-                <li className={cx("v-list-item-v-c-m", "li-mb-i-o")}>
-                  Trang Chủ
-                </li>
+                <li className={cx("v-list-item-v-c-m", "li-mb-i-o")}>Home</li>
               </Link>
 
               <Link

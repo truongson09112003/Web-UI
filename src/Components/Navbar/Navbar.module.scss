@@ -125,3 +125,9 @@
     display: block;
   }
 }
+
+@media (min-width: 740px) and (max-width: 1300px) {
+  .v-left {
+    flex: 0.3;
+  }
+}
