@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import classNames from "classnames/bind";
 import styles from "./Video.module.scss";
 import video from "../../video/mv.mp4";
@@ -11,11 +11,21 @@ function Video() {
   const Theme = useContext(themContext);
   const darkMode = Theme.state.darkMode;
 
+  const [state, setState] = useState(false);
+
+  function handleEdit() {
+    setState(!state);
+  }
+
+  useEffect(() => {
+    console.log(state);
+  }, [state]);
+
   document.title = "Trải Nghiệm Cùng Với CV Shopp...";
 
   return (
     <div className={cx("wrapper")}>
-      <video autoPlay playsInline loop className={cx("video")}>
+      <video autoPlay playsInline loop controls={state} className={cx("video")}>
         <source src={video} />
       </video>
       <div className={cx("video-px")}>
@@ -25,9 +35,7 @@ function Video() {
         >
           Bạn Có Muốn Tải Xuống CV ?
         </h4>
-        <a href={CV} download>
-          <button className={cx("button", "v-s-f")}>Download CV</button>
-        </a>
+        <button className={cx("button", "v-s-f")}>Download CV</button>
       </div>
       <div className={cx("video-px-y")}>
         <h4
@@ -39,6 +47,17 @@ function Video() {
         <a href="https://cv.fullstack.edu.vn/">
           <button className={cx("button", "v-s-f")}>Click ME</button>
         </a>
+      </div>
+      <div className={cx("video-px-ui")}>
+        <h4
+          className={cx("ic-kh")}
+          style={darkMode ? { color: "#fff" } : { color: "#000" }}
+        >
+          Bạn có muốn điều chỉnh video ?
+        </h4>
+        <button onClick={handleEdit} className={cx("button", "v-s-f")}>
+          Click ME!
+        </button>
       </div>
       <div className={cx("video-px-y-mobile", "ms-d-fe")}>
         <span className="span-video">

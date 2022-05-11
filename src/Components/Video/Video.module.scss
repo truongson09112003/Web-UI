@@ -77,6 +77,16 @@
   display: none;
 }
 
+.video-px-ui {
+  position: absolute;
+  z-index: 1000;
+  top: 130px;
+  left: 20px;
+  color: #fff;
+  animation: FadeIN linear 4s 5s forwards;
+  transform: translateX(-120%);
+}
+
 @media (max-width: 740px) {
   .v-ft {
     font-size: 8px;
