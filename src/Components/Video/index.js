@@ -35,7 +35,9 @@ function Video() {
         >
           Bạn Có Muốn Tải Xuống CV ?
         </h4>
-        <button className={cx("button", "v-s-f")}>Download CV</button>
+        <a href={CV} download>
+          <button className={cx("button", "v-s-f")}>Download CV</button>
+        </a>
       </div>
       <div className={cx("video-px-y")}>
         <h4
